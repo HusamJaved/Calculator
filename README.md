@@ -1,2 +1,2 @@
 # Calculator
-A simple web-based calculator on HTML, CSS and JavaScript.
+A Minimalistic Retro UI for a web-based calculator using HTML & CSS.
