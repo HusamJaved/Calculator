@@ -1,41 +1,52 @@
-<html>
-    <head>
-        <title>Calculator</title>
-        <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/segment7" type="text/css"/>
-    </head>
-    <body>
-        <div class="calc">
-            <form>
-                <input type="text" id="outputField" placeholder="0">
-                <div class="1row">
-                    <button type="button" id="button1" onclick="inputNumber(1)" >1</button>
-                    <button type="button" id="button2" onclick="inputNumber(2)">2</button>
-                    <button type="button" id="button3" onclick="inputNumber(3)">3</button>
-                    <button type="button" id="buttonAdd" onclick="add()">+</button>
-                </div>
-                <div class="2row">
-                    <button type="button" id="button4" onclick="inputNumber(4)">4</button>
-                    <button type="button" id="button5" onclick="inputNumber(5)">5</button>
-                    <button type="button" id="button6" onclick="inputNumber(6)">6</button>
-                    <button type="button" id="buttonSubtract" onclick="subtract()">-</button>
-                </div>
-                <div class="3row">
-                    <button type="button" id="button7" onclick="inputNumber(7)">7</button>
-                    <button type="button" id="button8" onclick="inputNumber(8)">8</button>
-                    <button type="button" id="button9" onclick="inputNumber(9)">9</button>
-                    <button type="button" id="buttonMultiply" onclick="multiply()">*</button>
-                </div>
-                <div class="4row">
-                    <button type="button" id="buttonClear" onclick="clear()">C</button>
-                    <button type="button" id="button0" onclick="inputNumber(0)">0</button>
-                    <button type="button" id="buttonEqual" onclick="calculate()">=</button>
-                    <button type="button" id="buttonDivide" onclick="divide()">/</button>
-                </div>
-            </form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="set">
+    <div class="calc">
+        <h1>CASIO CALCULATOR</h1>
+    <div class="screen">
+    <input type="text" id="outputField" placeholder="0">
+    </div>
+    <div class="keypad">
+        <div class="press">
+            <button type="button" id="button1" onclick="inputNumber(1)" >1</button>
+            <button type="button" id="button2" onclick="inputNumber(2)">2</button>
+            <button type="button" id="button3" onclick="inputNumber(3)">3</button>
+            <button type="button" id="buttonAdd" onclick="add()">+</button>
         </div>
-        <script>
-           
-            </script>
-    </body>
+        <div class="press">
+            <button type="button" id="button4" onclick="inputNumber(4)">4</button>
+            <button type="button" id="button5" onclick="inputNumber(5)">5</button>
+            <button type="button" id="button6" onclick="inputNumber(6)">6</button>
+            <button type="button" id="buttonSubtract" onclick="subtract()">-</button>
+        </div>
+        <div class="press">
+            <button type="button" id="button7" onclick="inputNumber(7)">7</button>
+            <button type="button" id="button8" onclick="inputNumber(8)">8</button>
+            <button type="button" id="button9" onclick="inputNumber(9)">9</button>
+            <button type="button" id="buttonMultiply" onclick="multiply()">*</button>
+        </div>
+        <div class="press">
+            <button type="button" id="buttonClear" onclick="clear()">C</button>
+            <button type="button" id="button0" onclick="inputNumber(0)">0</button>
+            <button type="button" id="buttonEqual" onclick="calculate()">=</button>
+            <button type="button" id="buttonDivide" onclick="divide()">/</button>
+        </div>
+    </div>
+</div>
+</div>
+</body>
 </html>
