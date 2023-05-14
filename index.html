@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/segment7" type="text/css"/>
+    </head>
+    <body>
+        <div class="calc">
+            <form>
+                <input type="text" id="outputField" placeholder="0">
+                <div class="1row">
+                    <button type="button" id="button1" onclick="inputNumber(1)" >1</button>
+                    <button type="button" id="button2" onclick="inputNumber(2)">2</button>
+                    <button type="button" id="button3" onclick="inputNumber(3)">3</button>
+                    <button type="button" id="buttonAdd" onclick="add()">+</button>
+                </div>
+                <div class="2row">
+                    <button type="button" id="button4" onclick="inputNumber(4)">4</button>
+                    <button type="button" id="button5" onclick="inputNumber(5)">5</button>
+                    <button type="button" id="button6" onclick="inputNumber(6)">6</button>
+                    <button type="button" id="buttonSubtract" onclick="subtract()">-</button>
+                </div>
+                <div class="3row">
+                    <button type="button" id="button7" onclick="inputNumber(7)">7</button>
+                    <button type="button" id="button8" onclick="inputNumber(8)">8</button>
+                    <button type="button" id="button9" onclick="inputNumber(9)">9</button>
+                    <button type="button" id="buttonMultiply" onclick="multiply()">*</button>
+                </div>
+                <div class="4row">
+                    <button type="button" id="buttonClear" onclick="clear()">C</button>
+                    <button type="button" id="button0" onclick="inputNumber(0)">0</button>
+                    <button type="button" id="buttonEqual" onclick="calculate()">=</button>
+                    <button type="button" id="buttonDivide" onclick="divide()">/</button>
+                </div>
+            </form>
+        </div>
+        <script>
+            // Selecting the necessary HTML elements and storing them in variables
+            const outputField = document.getElementById('outputField');
+            const buttonAdd = document.getElementById('buttonAdd');
+            const buttonSubtract = document.getElementById('buttonSubtract');
+            const buttonMultiply = document.getElementById('buttonMultiply');
+            const buttonDivide = document.getElementById('buttonDivide');
+            const buttonClear = document.getElementById('buttonClear');
+            const buttonEqual = document.getElementById('buttonEqual');
+            
+            // Variable to keep track of the current calculation
+            let currentCalculation = '';
+            
+            // Function to update the output field with the current calculation
+            function updateOutput() {
+              outputField.value = currentCalculation;
+            }
+            
+            // Function to clear the current calculation and output field
+            function clear() {
+              currentCalculation = '';
+              updateOutput();
+            }
+            
+            // Function to add a number to the current calculation
+            function inputNumber(number) {
+              currentCalculation += number.toString();
+              updateOutput();
+            }
+            
+            // Function to perform addition
+            function add() {
+              currentCalculation += '+';
+              updateOutput();
+            }
+            
+            // Function to perform subtraction
+            function subtract() {
+              currentCalculation += '-';
+              updateOutput();
+            }
+            
+            // Function to perform multiplication
+            function multiply() {
+              currentCalculation += '*';
+              updateOutput();
+            }
+            
+            // Function to perform division
+            function divide() {
+              currentCalculation += '/';
+              updateOutput();
+            }
+            
+            // Function to perform the calculation
+            function calculate() {
+              try {
+                currentCalculation = eval(currentCalculation);
+                updateOutput();
+              } catch (error) {
+                alert('Invalid calculation');
+                clear();
+              }
+            }
+            
+            // Adding event listeners to the buttons
+            buttonAdd.addEventListener('click', add);
+            buttonSubtract.addEventListener('click', subtract);
+            buttonMultiply.addEventListener('click', multiply);
+            buttonDivide.addEventListener('click', divide);
+            buttonClear.addEventListener('click', clear);
+            buttonEqual.addEventListener('click', calculate);
+            </script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+.class{
+    display: flex;
+    border: 50px;
+    box-sizing: border-box;
+    border-style: dotted;
+    position: relative;
+}
+#outputField{
+    width: 347px;
+    height: 75px;
+    font-size: 70px;
+    text-align: right;
+    font-family: 'Segment7Standard';
+    font-weight: normal;
+    font-style: italic;
+    padding: 10px;
+    background-color: rgba(0, 148, 64, 0.877);
+    color: black;
+}
+button{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    font-family: 'Segment7Standard';
+    font-weight: normal;
+    margin-top: 10px;
+    margin-right: 5px;
+    text-align:center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+body{
+    background-color: rgb(75, 75, 75);
+}
+#buttonClear{
+    background-color: white;
+    color: black;
+}
+#buttonEqual, #buttonAdd, #buttonMultiply, #buttonSubtract, #buttonDivide {
+    background-color: goldenrod;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+#buttonClear{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
