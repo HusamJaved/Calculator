@@ -1,47 +1,97 @@
-.class{
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(24, 24, 32);
+    font-family: VT323;
+}
+.set{
+    margin: 100px 0px;
     display: flex;
-    border: 50px;
-    box-sizing: border-box;
-    border-style: dotted;
+    justify-content: center;
+}
+.calc{
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 45px;
+    padding: 50px;
     position: relative;
 }
-#outputField{
-    width: 347px;
-    height: 75px;
-    font-size: 70px;
-    text-align: right;
-    font-family: 'Segment7Standard';
-    font-weight: normal;
-    font-style: italic;
-    padding: 10px;
-    background-color: rgba(0, 148, 64, 0.877);
-    color: black;
-}
-button{
-    position: relative;
-    width: 80px;
-    height: 80px;
-    font-size: 50px;
-    font-family: 'Segment7Standard';
-    font-weight: normal;
-    margin-top: 10px;
-    margin-right: 5px;
-    text-align:center;
-    background-color: rgb(0, 0, 0);
+.calc h1{
     color: white;
+    width: auto;
+    height: auto;
+    font-size: 40px;
+    font-family: 'Bakbak One', cursive;
 }
-body{
-    background-color: rgb(75, 75, 75);
+
+.screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+#buttonAdd, #buttonSubtract, #buttonMultiply, #buttonDivide{
+    background-color: orange;
+    color: black;
+    border: 1px solid white;
+} 
+#buttonEqual{
+    background-color: greenyellow;
+    color: black;
+    border: 1px solid white;
+}
+#buttonAdd:hover, #buttonSubtract:hover, #buttonMultiply:hover, #buttonDivide:hover{
+    background-color: white;
+    color: black;
+} 
+#buttonEqual:hover{
+    background-color: white;
+    color: black;
 }
 #buttonClear{
     background-color: white;
     color: black;
 }
-#buttonEqual, #buttonAdd, #buttonMultiply, #buttonSubtract, #buttonDivide {
-    background-color: goldenrod;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+#buttonClear:hover{
+    border-style: none;
+}
+.screen input{
+    color: white;
+    font-size: 100px;
+    width: 550px;
+    text-align: right;
+    height: auto;
+    padding: 10px 5px;
+    border-radius: 15px;
+    border: 1px solid darkgray;
+    background-color: white;
     color: black;
 }
-#buttonClear{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.screen input ::placeholder{
+    font-size: 35px;
+}
+.keypad .press{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 15px 0px;
+}
+.keypad .press button{
+    color: white;
+    border: 1px solid;
+    height: auto;
+    width: 120px;
+    font-size: 62px;
+    border-radius: 15px;
+    box-shadow: 5px 5px rgb(88, 88, 88);
+    font-family: 'Bakbak One', cursive;
+}
+.keypad .press button:hover{
+    background-color: white;
+    color: black;
+}
+.keypad .press button:active{
+    box-shadow: 5px 5px rgb(88, 88, 88);
 }
