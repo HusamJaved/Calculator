@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="set">
+    <div class="calc">
+        <h1>CASIO CALCULATOR</h1>
+        <form name="form">
+    <div class="screen">
+    <input style="background-color: rgb(119, 165, 119);" type="text" id="outputField" placeholder="0" name="displayResult" />
+    </div>
+    <div class="keypad">
+        <div class="press">
+            <button type="button" name="button1" value="1" onClick="calcNumbers(button1.value)">1</button>
+            <button type="button" name="button2" value="2" onClick="calcNumbers(button2.value)">2</button>
+            <button type="button" name="button3" value="3" onClick="calcNumbers(button3.value)">3</button>
+            <button type="button" id="buttonAdd" name="addb" value="+" onClick="calcNumbers(addb.value)">+</button>
+        </div>
+        <div class="press">
+            <button type="button"  name="button4" value="4" onClick="calcNumbers(button4.value)">4</button>
+            <button type="button"  name="button5" value="5" onClick="calcNumbers(button5.value)">5</button>
+            <button type="button"  name="button6" value="6" onClick="calcNumbers(button6.value)">6</button>
+            <button type="button" id="buttonSubtract" name="subb" value="-" onClick="calcNumbers(subb.value)">-</button>
+        </div>
+        <div class="press">
+            <button type="button"  name="button7" value="7" onClick="calcNumbers(button7.value)">7</button>
+            <button type="button"  name="button8" value="8" onClick="calcNumbers(button8.value)">8</button>
+            <button type="button"  name="button9" value="9" onClick="calcNumbers(button9.value)">9</button>
+            <button type="button" id="buttonMultiply" name="prodb" value="*" onClick="calcNumbers(prodb.value)">*</button>
+        </div>
+        <div class="press">
+            <button type="button" id="buttonClear" value="C" onclick="location.reload();">C</button>
+            <button type="button"  name="button0" value="0" onClick="calcNumbers(button0.value)">0</button>
+            <button type="button" id="buttonEqual" onclick="displayResult.value=eval(displayResult.value)">=</button>
+            <button type="button" id="buttonDivide" name="divb" value="/" onClick="calcNumbers(divb.value)">/</button>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
